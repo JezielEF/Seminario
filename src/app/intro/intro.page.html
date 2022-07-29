@@ -1,0 +1,45 @@
+<ion-content>
+    <ion-slides pager="true" [options]="slideOpt">    
+  
+      <ion-slide>
+        <ion-icon name="close"></ion-icon>
+        <h1>Bienvenido a MusicApp</h1> 
+        <h2>Kurt Cobain</h2>
+        <img src="assets/images/music1.jpg"/>
+        <div>La música es sinónimo de libertad, de tocar lo que quieras y como quieras, siempre que sea bueno y tenga pasión, que la música sea el alimento del amor.</div>
+        <p>Rock</p>
+        <p><ion-icon name="musical-notes-outline"></ion-icon></p>
+      </ion-slide>
+  
+      <ion-slide>
+        <ion-icon name="close"></ion-icon>  
+        <h1>Más</h1>
+        <h2>Luciano Pavarotti</h2>
+        <img src="assets/images/music2.jpg"/>
+        <div>Pienso que una vida dedicada a la música es una vida bellamente empleada, y es a eso a lo que he dedicado la mía.</div>
+        <p>Opera</p>
+        <p><ion-icon name="musical-notes-outline"></ion-icon></p>
+      </ion-slide>
+  
+      <ion-slide> 
+        <ion-icon name="close"></ion-icon>
+        <h1>Más</h1>
+        <h2>Magdalena Martínez</h2>
+        <img src="assets/images/music3.jpg"/>
+        <div>La música es el arte más directo, entra por el oído y va al corazón.</div>
+        <p>Instrumental</p>
+        <p><ion-icon name="musical-notes-outline"></ion-icon></p>
+      </ion-slide>
+  
+      <ion-slide *ngFor="let slide of slides">
+          <ion-icon name="close" (click)="finish()"></ion-icon>
+          <h1>{{slide.title}}</h1> 
+          <h2>{{slide.subtitle}}</h2>
+          <img src={{slide.img}}>
+          <p>{{slide.description2}} </p>
+          <div>{{slide.description}} <ion-icon name={{slide.icon}}></ion-icon> </div>
+          <div>{{slide.genero}} <ion-icon name={{slide.icon2}}></ion-icon></div>
+          <ion-button>Next</ion-button>
+        </ion-slide>
+    </ion-slides>
+  </ion-content> 
