@@ -22,8 +22,7 @@ export class AuthenticateService {
       }
       this.storage.get("user").then((data) => {
         if (
-          credentials.email == data.email && 
-          credentials.password == data.password
+          credentials.email == data.email && credentials.password == atob(data.password)
         ) {
           accept("Inicio de sesión exitoso");
         } else {

@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'registration',
     loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
   },
+  {
+    path: 'songs-modal',
+    loadChildren: () => import('./songs-modal/songs-modal.module').then( m => m.SongsModalPageModule)
+  },
 ];
 
 @NgModule({
