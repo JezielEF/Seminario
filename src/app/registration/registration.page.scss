@@ -1,0 +1,46 @@
+ion-title{
+    background-color:grey;
+    color:red;
+    padding:22px;
+    border-style: solid;
+    border-color:black;
+
+}
+
+ion-item{
+    color:orange;
+    border-style:solid;
+    border-color:black;
+    border-width: 1px;
+}
+
+ion-button{
+    background-color:orangered;
+    border-style:solid;
+    border-color:black;
+    border-width: 1px;
+
+}
+
+ion-icon{
+    border-style:solid;
+    border-color:black;
+
+}
+form {
+    background-color:orangered;
+    padding:22px;
+    border-style: solid;
+    border-color: black;
+    height: 90%;
+  }
+
+
+
+.message{       //Utilidades CSS
+    background-color:red;
+    color: white;
+    text-transform: uppercase; 
+    font-size: 11px; 
+    text-align: center;
+} 
